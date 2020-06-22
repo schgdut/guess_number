@@ -7,12 +7,12 @@ public class UserRepositoryTest {
     @Test
     public void should_return_userInfo() {
 
-        UserInfo userInfo = new UserInfo("ys",new GuessNumberGame(new AnswerGenerator()),0,0);
+        UserInfo userInfo = new UserInfo("sch",new GuessNumberGame(new AnswerGenerator()),0,0);
         UserRepository userRepository = new UserRepository();
 
-        userRepository.setUserInfo("ys",userInfo);
+        userRepository.setUserInfo("sch",userInfo);
 
-        UserInfo result = userRepository.getUserInfoById("ys");
+        UserInfo result = userRepository.getUserInfoById("sch");
         Assert.assertNotNull(result);
         Assert.assertEquals(0,result.getScore());
 
