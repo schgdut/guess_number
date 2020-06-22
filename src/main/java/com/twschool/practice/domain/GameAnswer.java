@@ -6,10 +6,14 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class GameAnswer {
-    private final List<String> answerNumbers;
+    private  List<String> answerNumbers;
 
     public GameAnswer(String answerString) {
         this.answerNumbers = Arrays.asList(answerString.split(" "));
+    }
+
+    public GameAnswer(List<String> answerNumbers) {
+        this.answerNumbers = answerNumbers;
     }
 
     public String check(String userAnswerString) {

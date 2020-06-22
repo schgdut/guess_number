@@ -3,7 +3,7 @@ package com.twschool.practice.domain;
 public class GuessNumberGame {
     public static final int MAX_TRY_TIMES = 6;
     public static final String CORRECT_RESULT = "4A0B";
-    private final GameAnswer gameAnswer;
+    private  GameAnswer gameAnswer;
     private GameStatus gameStatus = GameStatus.CONTINUED;
     private int leftTryTimes = MAX_TRY_TIMES;
 
